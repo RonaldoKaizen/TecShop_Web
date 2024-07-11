@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecShop - WebHome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css"> <!-- Enlace al archivo CSS externo -->
+    
+    <link rel="icon" href="../img/logotecshop.png" type="image/x-icon">
+
+    <!-- fontsgoogle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- iconos navbar-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- SWIPER CSSS -->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+
+
+</head>
+  
+<body>
+  
+  
+
+  <header class="header">
+    <div class="header1">
+        
+        <!-- <img width="" src="./img/logotecshop.png" alt="Logo-TecShop"> -->
+        <a href="#" class="logo"><i class="fas fa-shop"></i> <span>TEC </span>SHOP</a>
+        
+        <!-- ICONOS PARTE MEDIO NAVBAR------------------ -->
+        <form action="" class="buscar-form">
+                <input type="search" placeholder="Busca aquí..." id="buscar-box">
+                <label for="buscar-box" class="fas fa-search"></label>
+        </form>
+        
+        <!-- ICONOS PARTE DERECHA NAVBAR............... -->
+        <div class="iconos">
+            <div id="buscar-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-home" id="toggle-navbar"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <div id="login-btn" class="fas fa-user"></div>
+
+        </div>
+    </div> 
+
+    <!-- NAVBAR SECRETO -------------------- -->
+    <section class="secret-bar">
+        <div class="hidden-navbar" id="hidden-navbar">
+          <nav id="secret-navbar" class="hidden">
+            <div class="list-container">
+              <ul class="list">
+                  <li><a href="#categorias">Categorías</a></li>
+                  <!-- <li>Item 2</li>
+                  <li>Item 3</li> -->
+              </ul>
+              <ul class="list">
+                <li><a href="./html/servicio.html">Servicios</a></li>
+                  <!--  <li>Item 5</li>
+                  <li>Item 6</li> -->
+              </ul>
+              <ul class="list">
+                <li><a href="#contacto">Contáctanos</a></li>
+                  <!-- <li>Item 8</li>
+                  <li>Item 9</li> -->
+              </ul>
+              <ul class="list">
+                <li><a href="html/sobrenosotros.html" >Sobre Nosotros</a></li>
+                  <!-- <li>Item 8</li>
+                  <li>Item 9</li> -->
+              </ul>
+          </div>
+          </nav>
+      </div>
+    </section>
+
+
+    <!-- LOGEAR -------------------- -->
+    <div class="login-form-container" id="login-form-container">
+      <div id="close-login-btn" class="fas fa-times"></div>
+      <form action="">
+          <h3>Iniciar Sesión</h3>
+          <span>Nombre de usuario: </span>
+          <input class="box" type="email" name="" placeholder="Correo electrónico" id="">
+          <span>Contraseña: </span>
+          <input class="box" type="password" name="" placeholder="Ingresa tu contraseña">
+          <div class="checkbox">
+              <input type="checkbox" name="" id="remember-me">
+              <label for="remember-me">Recuerdame</label>
+          </div>
+          <a class="boton" href="#">Iniciar Sesión</a>
+          <!-- <input type="submit" value="Iniciar Sesión" class="boton"> -->
+          <p>¿No recuerdas tu contraseña? <a href="#">Click aquí</a></p>
+          <p>¿No tienes cuenta? <a href="#">Crear cuenta</a></p>
+      </form>
+    </div>
+    
+  </header>
+
+  <main>
+    <!-- CARRUSEL------------------->
+    <section>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="https://tecnobits.net/wp-content/uploads/2018/02/los-mejores-celulares-del-momento.jpg" class="d-block w-100" alt="celulares">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h5>Celulares</h5>
+                      <p>Desde alcatel hasta iphone</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="https://media.pasionmovil.com/old/2022/02/laptops.webp" class="d-block w-100" alt="laptops">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h5>Laptops</h5>
+                      <p>Garantias de 2 años</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="https://topesdegama.com/app/uploads-topesdegama.com/2020/04/smart-tv-2.jpg" class="d-block w-100" alt="televisores">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h5>Televisores</h5>
+                      <p>Pantalla mas delgada que una hoja</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="https://www.guiahardware.es/wp-content/uploads/2021/01/mejores-tablets-en-calidad-precio.jpg" class="d-block w-100" alt="tablets">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h5>Tablets</h5>
+                      <p>A prueba de caídas</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="https://smartwatch-migliori.it/wp-content/uploads/2019/03/top.jpg" class="d-block w-100" alt="smartwatch">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h5>Smartwatch</h5>
+                      <p>Resistente al agua</p>
+                  </div>
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+
+  </section>
+
+
+
+
+    <!-- CATEGORIAAAAAAAAAAAAAAASSSSSS -->
+      <div class="categoria-section" id="categorias">
+        <h2 >Categorías</h2>
+      
+      <section class="services-section">
+        
+        <div class="service-card">
+            <div class="service-icon" style="background-image: url('./img/laptops.png');"></div>
+            <h3>Laptops</h3>
+            <p>Laptops de todos los precios, de todas las marcas y de mejor calidad!</p>
+            <a href="#">Ver todo</a>
+        </div>
+        <div class="service-card">
+            <div class="service-icon" style="background-image: url('./img/celulares.png');"></div>
+            <h3>Celulares</h3>
+            <p>Celulares de todos los precios, de todas las marcas y de mejor calidad!</p>
+            <a href="/celulares/index.html">Ver todo</a>
+        </div>
+        <div class="service-card">
+            <div class="service-icon" style="background-image: url('./img/reloges.png');"></div>
+            <h3>Relojes Tecnológicos</h3>
+            <p>Relojes de todos los precios, de todas las marcas y de mejor calidad!</p>
+            <a href="#">Ver todo</a>
+        </div>
+    </section>
+  </div>
+
+    
+
+    <!-- LAPTOPS MAS USADAS ----------- slider de tarjetas-.---------------- -->
+    <section class="container" >
+      
+      <div class="card__container swiper">
+        <h2 class="subtitulo">Laptops <span>Más usadas</span></h2>
+        <div class="card__content" >
+          <div class="swiper-wrapper" >
+            <article class="card__article swiper-slide">
+              <div class="card__image">
+                <img class="card__img" src="../img/laptop1.png" alt="avatar1">
+                <div class="card__shadow"></div>
+              </div>
+              <div class="card__data">
+                <h3 class="card__name">Asus Tuf</h3>
+                <p class="card__descriptiom">
+                  Laptop Gamer Asus TUF F15 15.6" Windows 11 Intel Core i7 10 núcleos 16GB 1TB RTX 4050 FX507VU-LP180W <br><b>S/ 5,499.00</b>
+                </p>
+                <a href="./detallelaptop/index.html" class="card__button">Ver más detalles</a>
+              </div>
+            </article>
+            <article class="card__article swiper-slide">
+              <div class="card__image">
+                <img class="card__img" src="../img/laptop2.png" alt="avatar1">
+                <div class="card__shadow"></div>
+              </div>
+              <div class="card__data">
+                <h3 class="card__name">HP</h3>
+                <p class="card__descriptiom">
+                  Laptop Gamer HP Victus 15.6" Windows 11 AMD Ryzen 7 16GB 512GB NVIDIA RTX 3050 15-FB0125LA <br><b>S/ 3,299.00</b>
+                </p>
+                <a href="#" class="card__button">Ver más detalles</a>
+              </div>
+            </article>
+            <article class="card__article swiper-slide">
+              <div class="card__image">
+                <img class="card__img" src="../img/laptop3.png" alt="avatar1">
+                <div class="card__shadow"></div>
+              </div>
+              <div class="card__data">
+                <h3 class="card__name">Lenovo</h3>
+                <p class="card__descriptiom">
+                  Laptop Lenovo Ideapad Slim 5i 16" Intel Core i7 13a Gen 10 Núcleos 16GB 512GB 82XF0071LM <br><b>S/ 3,099.00</b>
+                </p>
+                <a href="#" class="card__button">Ver más detalles</a>
+              </div>
+            </article>
+            <article class="card__article swiper-slide">
+              <div class="card__image">
+                <img class="card__img" src="../img/laptop4.png" alt="avatar1">
+                <div class="card__shadow"></div>
+              </div>
+              <div class="card__data">
+                <h3 class="card__name">Acer</h3>
+                <p class="card__descriptiom">
+                  Laptop Acer Aspire 16" IPS Windows 11 Intel Core i7 12a Gen 16GB 512GB AL16-51P-7984 <br><b>S/ 2,599.00</b>
+                </p>
+                <a href="#" class="card__button">Ver más detalles</a>
+              </div>
+            </article>
+            <article class="card__article swiper-slide">
+              <div class="card__image">
+                <img class="card__img" src="../img/laptop5.png" alt="avatar1">
+                <div class="card__shadow"></div>
+              </div>
+              <div class="card__data">
+                <h3 class="card__name">Lenovo</h3>
+                <p class="card__descriptiom">
+                  Laptop Gamer Lenovo LOQ 15.6" Intel Core i5 12a Gen 8 Núcleos 8GB 512GB NVIDIA RTX3050 82XV00T8LM <br><b>S/ 3,199.00</b>
+                </p>
+                <a href="#" class="card__button">Ver más detalles</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!--  Navigation buttons -->
+        <div class="swiper-button-prev">
+          <i class="ri-arrow-left-wide-line"></i>
+        </div>
+        <div class="swiper-button-next">
+          <i class="ri-arrow-right-wide-line"></i>
+        </div>
+              
+      </div>
+      
+      <!-- Pagination -->
+      <!-- <div class="swiper-pagination"></div> -->
+    </section>
+    
+    <!-- HISTORIAAA------------ -->
+    <section class="section-container">
+      <img class="historiaimg" width="150" src="./img/logotecshop2.png" alt="Tecsup">
+      <div class="text-content">
+          <h2>Historia de fundación</h2>
+          <p>Esto comenzó con una brillante idea de poder emprender en el desarrollo de nuevas paginas web pero enfocado en UI y UX para atraer más usuarios.</p>
+          <div class="buttons">
+              <a href="#" class="primary-btn" id="openModalBtn">Invitar un cafecito</a>
+              <a href="#" class="secondary-btn">Leer más</a>
+          </div>
+        </div>
+    </section>
+   
+
+
+
+
+
+    <!-- contactanos-------------- -->
+    <section class="contacto" id="contacto"> 
+      <h2 class="titulo-content">Contácta<span>nos!</span></h2>
+      <form action="#">
+          <div class="input-box">
+              <input type="text" placeholder=" Nombre y Apellidos">
+              <!-- <input type="text" placeholder="Lastnames"> -->
+              <input type="email" placeholder=" Correo electrónico">
+          </div>
+          <div class="input-box">
+              <input type="text" placeholder=" Número de contacto">
+              <input type="text" placeholder=" Correo secundario">
+          </div>
+          <textarea name="" id="" cols="30" rows="10" placeholder=" Mensaje"></textarea>
+          <input type="submit" value="Enviar mensaje" class="boton-mensaje">
+      </form>
+    </section>
+
+  </main>
+
+  
+    
+
+
+
+
+
+
+
+    <!-- footer----------------------------------->
+    <section class="footer">
+        <footer class="text-center text-lg-start text-white" style="background-color: rgb(0, 0, 212)">
+            <!-- Grid container -->
+            <div class="p-4 pb-0">
+                <!-- Section: Links -->
+                <section class="">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">
+                                TecShop
+                            </h6>
+                            <p>
+                                <img width="140" src="./img/logotecshop.png" alt="TecShop_Logo" style="max-width: 100%;">
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+    
+                        <hr class="w-100 clearfix d-md-none" />
+    
+                        <!-- Grid column -->
+                        <hr class="w-100 clearfix d-md-none" />
+    
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Contáctanos</h6>
+                            <p><i class="fas fa-home mr-3"></i> Lima, Perú</p>
+                            <p><i class="fas fa-envelope mr-3"></i> tecshop@gmail.com</p>
+                            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-clock mr-3"></i> Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                        </div>
+                        <!-- Grid column -->
+    
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Síguenos</h6>
+    
+                            <!-- Facebook -->
+                            <a class="btn btn-primary btn-floating m-1 no-border" style="background-color: #3b5998" href="https://www.facebook.com" role="button" target="_blank">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+    
+                            <!-- Twitter -->
+                            <a class="btn btn-primary btn-floating m-1 no-border" style="background-color: #55acee" href="https://www.twitter.com" role="button" target="_blank">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+    
+                            <!-- YouTube -->
+                            <a class="btn btn-primary btn-floating m-1 no-border" style="background-color: #ff0000" href="https://www.youtube.com" role="button" target="_blank">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+    
+                            <!-- Instagram -->
+                            <a class="btn btn-primary btn-floating m-1 no-border" style="background-color: #ac2bac" href="https://www.instagram.com" role="button" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+                </section>
+                <!-- Section: Links -->
+            </div>
+            <!-- Grid container -->
+    
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2024 Copyright: TecShop
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </section>
+
+
+    <script src="../js/swiper.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>

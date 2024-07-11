@@ -1,0 +1,734 @@
+
+* {
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Teko", sans-serif;
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+    
+}
+
+html {
+    /* SCROLLBEHAVIOR me permite deslizar cuando hago clic en os links del menú */
+    font-size: 60%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../img/fondo3.png");
+    /* BACKGROUNDSIZE COVER MODIFICA EL TAMAÑO OCUPANDO LO NECESARIO*/
+    background-size: cover;
+    background-position: center center ;
+    height: 100vh;    
+    
+}
+
+/* MENU */
+/* .contenedor-header{
+    
+    box-shadow: 0 1px 1px 0 gold;
+    FONTWEIGHT - BOLD HACE A LAS LETRAS MAS GRUESAS O NEGRITAS
+    font-weight: bold;
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+} */
+
+/* ---------------------NAVBAR--------------------- */
+.header{
+    /* max-width: 1024px;
+    margin: 5px;
+    margin-inline: auto; */
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    padding: 1.8rem 7%;
+    display: flex;
+    width: 100%;
+    /* JUSTIFYCONTENT ESTILO DE APARECIMIENTO DE LAS LISTAS EN EL ENCABEZADO */
+    justify-content: space-between;
+    /* Alinea al medio de entre arriba y abajo (no de los costados) */
+    align-items: center;
+    z-index: 100;
+    
+}
+
+
+.header ul{
+    /* DISPLAY Divide a las listas dentro del ul */
+    display: flex;
+    list-style: none;
+    align-items: center;
+    
+}
+.header ul li {
+    margin: 0;
+    padding: 0;
+    transition: 0.8s;
+    &:hover{
+        color: brown;
+        transform: scale(1.15);
+        
+    }
+}
+
+.header ul li a{
+    
+    /* MODIFICA EL TAMAÑO DEL TEXTO */
+    font-size: 30px;
+    /* MODIFICA EL GROSOR DEL TEXTO */
+    font-weight: 700;
+    text-align: none;
+    color: rgb(255, 255, 255);
+    margin: 0 3rem;
+    padding: 3px;
+    /* Anula o modifica las lineas debajo de las listas dentro de ul "li" */
+    text-decoration: none;
+    /* TEXT-SHADOW SOBREA LOS TEXTOS0 */
+    text-shadow: 0px 1px 0px  rgba(104, 104, 104, 0.788);
+    transition: .8s;
+    /* &:hover o :hover cambia la interacción al poner el puntero encima  */
+    &:hover{
+        color: brown;  
+    }
+    /* &:active cambia la interacción al dar click */
+    &:active{
+        color: goldenrod;
+    }
+}
+.header ul li a.activo{
+    color: goldenrod;
+}
+
+#nav-responsive a{
+    background-color: none;
+    color: gold;
+    font-size: 24px;
+    text-shadow: 3px 3px 3px  black;
+    margin: 1px;
+    /* cambiar el estilo del cursor cuando se encuentre encima de el */
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover{
+        
+        color: aqua;
+        font-size: 160%;
+    }
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+    padding: 4.8rem 7% 2rem;
+}
+
+/* ------------------MAIN-SECCION-HOME-------------------- */
+
+
+.inicio {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.inicio-content {
+    
+    /* font-weight: 700; */
+    color: #ffffff;
+    padding: 12rem 0;
+    margin: 0 8rem;
+    
+}
+
+.escrito h3 {
+    font-size: 6rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255, 0.8);
+}
+span {
+    color: goldenrod;
+}
+
+.escrito h1 {
+    font-size: 7rem;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+}
+.inicio-content p{
+    color: rgb(255, 255, 255, 0.8);
+    font-size: 3rem;
+}
+.fotografia1{
+    border: solid ;
+    box-shadow: 0 4px 8px 0 goldenrod;
+    width: 20vw;
+    border-radius: 30px;
+}
+.redes-sociales {
+    display: flexbox;
+    margin: 35px 15px 35px 0;
+}
+
+
+.redes-sociales a i{
+    
+    
+    font-size: 4.5rem;
+    
+    padding: 0px 0px ;
+    margin: 0px 30px 15px 0;
+    transition: 0.5s;
+    border-radius: 50%;
+    &:hover{
+        transform: scale(1.15);
+       
+    }
+}
+
+.cv {
+    margin: 2rem 0;
+    
+}
+
+.descargar {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    color: white;
+    text-align: center;
+    background-color: goldenrod;
+    padding: 6px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 0 1rem  goldenrod;
+    transition: 0.7s ;
+    &:hover{
+        
+        background-color: brown;
+        font-size: 303%;
+        box-shadow: 0 0 1rem  rgb(255, 255, 255);
+        
+    }
+}
+
+/* ---------------------ABOUT ME-------------------------------- */
+
+.fotografia2{
+    border: solid black;
+    box-shadow: 0 0 1rem goldenrod;
+    max-width: 25vw;
+    height: 32vw;
+    border-radius: 30px;
+}
+
+.sobremi .sobremi-content div .boton {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    color: white;
+    text-align: center;
+    background-color: goldenrod;
+    padding: 6px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 0 1rem  goldenrod;
+    transition: 0.7s;
+    &:hover{
+        
+        box-shadow: 0 0 1rem  rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255, 0.7);
+        color: black;
+    
+    }
+}
+
+.sobremi {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* GAP sirve para dar un espaciado entre todos los elementos que se encuentran dentro de la clase */
+    gap: 3rem;
+    
+
+}
+
+.heading {
+    font-size: 6rem;
+}
+
+.sobremi-content h2 {
+    
+    text-align: left;
+}
+.sobremi-content h3 {
+    color: rgb(255, 255, 255, 0.8);
+    text-align: left;
+    font-size: 4rem;
+}
+.sobremi-content p {
+    color: rgb(255, 255, 255, 0.8);
+    text-align: left;
+    margin: 2rem 0 4rem;
+    font-size: 3rem;
+}
+
+/* SKILLS------------------------------------------------- */
+
+
+.contenedor-skills {
+    padding: 10rem;
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    
+
+}
+.contenedor-skills .skill {
+    max-width: 600px;
+    margin: 30px auto;
+}
+.contenedor-skills .skill  .info {
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor-skills .skill p {
+    display: inline-block;
+    margin-right: 0px;
+    transition: 0.6s;
+    text-decoration: none;
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.6s;
+    }
+    
+}
+.contenedor-skills .skill p a {
+    text-decoration: none;
+    color: white;
+    
+    &:hover {
+        color: goldenrod;
+    }
+
+}
+
+.contenedor-skills .skill .barra {
+    background-color: rgb(255, 255, 255, 0.4);
+    width: 100%;
+    height: 6px;
+    margin: 10px 0;
+}
+
+.contenedor-skills .skill .barra .barra-progreso1 {
+    background-color: brown;
+    width: 90%;
+    height: 6px;
+    animation: progreso1 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso2 {
+    background-color: brown;
+    width: 85%;
+    height: 6px;
+    animation: progreso2 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso3 {
+    background-color: brown;
+    width: 70%;
+    height: 6px;
+    animation: progreso3 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso4 {
+    background-color: brown;
+    width: 75%;
+    height: 6px;
+    animation: progreso4 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso5 {
+    background-color: brown;
+    width: 40%;
+    height: 6px;
+    animation: progreso5 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso6 {
+    background-color: brown;
+    width: 15%;
+    height: 6px;
+    animation: progreso6 2s forwards;
+}
+@keyframes progreso1 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+@keyframes progreso2 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 85%;
+    }
+}
+@keyframes progreso3 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+@keyframes progreso4 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 75%;
+    }
+}
+@keyframes progreso5 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 40%;
+    }
+}
+@keyframes progreso6 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 15%;
+    }
+}
+
+
+
+/* SERVICES -----------------------------------------*/
+
+.serviciotodo {
+    color: white;
+    
+    padding: 10rem;
+    
+}
+.titulo-content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 6rem;
+    margin-bottom: 4rem;
+
+}
+.servicio-fila {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* con flex-wrap wrap para tipo responsive se acomoden de acuerdo al tamaño de la pantalla */
+    flex-wrap: wrap;
+
+    /* gap para un espaciado entre los elementos */
+    gap: 2rem;
+    margin: 2rem 0;
+}
+.servicio-fila .servicio {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    flex: 1 1 30rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    border: solid 3px rgb(255, 255, 255, 0.4);
+    transition: 0.5s;
+    &:hover{
+        transform: scale(1.04);
+        border: solid goldenrod;
+        box-shadow: 0 0 2rem  goldenrod;
+    }
+    
+}
+.servicio i{
+    margin: 0;
+    color: goldenrod;
+    font-size: 6rem;
+}
+.servicio h3 {
+    margin-bottom: 4rem;
+    font-size: 3rem;
+}
+.servicio p {
+    margin: 1rem 0 2.9rem;;
+    color: rgb(255, 255, 255, 0.8);
+    font-size: 2.3rem;
+}
+.boton-servicio {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    background-color: goldenrod;
+    padding: 3px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 0 1rem  goldenrod;
+    transition: 0.7s ;
+    &:hover{
+        background-color: rgb(255, 255, 255, .7);
+        color: black;
+        box-shadow: 0 0 1rem  rgb(255, 255, 255);
+        
+    }
+}
+
+
+/* PORTFOLIO-PROYECTS---------------------------------- */
+
+.portafolio {
+    color: white;
+    
+    padding: 10rem;
+}
+
+.portafolio h2{
+    margin-bottom: 4rem;
+    
+}
+
+.portafolio-fila {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+    margin: 2rem 3rem;
+
+}
+.portafolio-fila .portafolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem goldenrod;
+    overflow: hidden;
+    display: flex;
+}
+
+.portafolio-box img {
+    
+    width: 100%;
+    transition: 0.5s ease;
+    
+}
+
+.portafolio-box:hover img {
+    transform: scale(1.1);
+}
+
+.portafolio-box .portafolio-text {
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), goldenrod);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 4rem;
+
+    /* TRANSFORM PARA HACERLO INTERACTIVO COMO SI FUERA UN HOVER */
+    transform: translateY(100%);
+    transition: 0.8s ease;
+}
+
+.portafolio-box:hover .portafolio-text {
+    
+    transform: translateY(0);
+}
+
+.portafolio-text h4 {
+    font-size: 3rem;
+}
+.portafolio-text p {
+    color:  rgb(255, 255, 255, 0.8);
+    font-size: 1.8rem;
+    margin: .3rem 0 1rem;
+}
+.portafolio-text a {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: rgb(255, 255, 255, 0.9);
+    border-radius: 50%;
+    transition: 1s ease;
+    &:hover {
+        transform: scale(1.15);
+        
+        
+    }
+}
+.portafolio-text a i {
+    color: goldenrod;
+    font-size: 2.8rem;
+}
+
+/* CONTACTO-------------------------------------- */
+.contacto {
+    color: white;
+    
+    padding: 10rem;
+}
+.contacto h2 {
+    margin-bottom: 2rem;
+}
+.contacto form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    
+}
+.contacto form .input-box {
+    display: flex;
+    
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contacto form .input-box input,
+.contacto form textarea {
+    
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.9rem;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255, 0.7);
+    border-radius: .9rem;
+    margin: .7rem 0;
+    transition: 0.7s;
+    &:hover {
+        background-color: rgb(255, 255, 255, 0.9);
+        box-shadow: 0 5px 0 goldenrod;
+    }
+
+}
+.contacto form .input-box input {
+    width: 49.3%;
+}
+.contacto form textarea {
+    resize: none;
+}
+
+.boton-mensaje {
+    cursor: pointer;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: goldenrod;
+    padding: 6px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 0 1rem  goldenrod;
+    transition: 0.7s;
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 1rem  rgb(255, 255, 255,);
+        background-color: rgb(255, 255, 255, 0.7);
+        color: black;
+        
+    
+    }
+}
+
+
+
+
+/* footer-------------------- */
+.footer {
+    color:  rgb(255, 255, 255, 0.6);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(0, 0, 0);
+    
+    display: flex;
+
+    /* JUSTIFY SPACE BETWEEN HACE QUE LOS ELEMENTOS DENTRO SE DIVIDAN A LA DERECHA Y IZQUIERDA */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3rem 7%;
+    font-size: 2.3rem;
+}
+
+.footer .redes-sociales-footer a i{
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem;
+    padding: .8rem;
+    /* border-radius: 50%;
+    border: solid goldenrod;
+    background-color: goldenrod; */
+    
+}
+
+
+.redes-sociales-footer a i{
+    font-size: 3.5rem;
+    
+    padding: 0px 0px ;
+    margin: 0px 30px 15px 0;
+    transition: 0.5s;
+    border-radius: 50%;
+    &:hover{
+        transform: scale(1.15);
+       
+    }
+}
+.footer .footer-correo {
+    text-align: center;
+}
+.footer .footer-correo p  {
+    text-decoration: none;
+    transition: 0.5s;
+    &:hover {
+        transform: scale(1.1);
+        
+    }
+}
+.footer .footer-correo p a {
+    text-decoration: none;
+    transition: 0.5s;
+    &:hover {
+        
+        text-decoration: underline;
+    }
+}
